@@ -1,0 +1,58 @@
+create table `user`
+    -- --------------------------------------------------
+    --  Table Structure for `SweetHearts/models.User`
+    -- --------------------------------------------------
+    CREATE TABLE IF NOT EXISTS `user` (
+        `id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY,
+        `user_name` varchar(255) NOT NULL DEFAULT ''  UNIQUE,
+        `pass_word` varchar(255) NOT NULL DEFAULT '' ,
+        `profile_id` integer NOT NULL UNIQUE,
+        `honey` varchar(255) NOT NULL DEFAULT ''
+    ) ENGINE=InnoDB;
+
+create table `profile`
+    -- --------------------------------------------------
+    --  Table Structure for `SweetHearts/models.Profile`
+    -- --------------------------------------------------
+    CREATE TABLE IF NOT EXISTS `profile` (
+        `id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY,
+        `real_name` varchar(255) NOT NULL DEFAULT '' ,
+        `sex` varchar(255) NOT NULL DEFAULT '' ,
+        `head_image` varchar(255) NOT NULL DEFAULT ''
+    ) ENGINE=InnoDB;
+
+create table `friend`
+    -- --------------------------------------------------
+    --  Table Structure for `SweetHearts/models.Friend`
+    -- --------------------------------------------------
+    CREATE TABLE IF NOT EXISTS `friend` (
+        `id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY,
+        `friend_name` varchar(255) NOT NULL DEFAULT '' ,
+        `user_name` varchar(255) NOT NULL DEFAULT ''
+    ) ENGINE=InnoDB;
+
+create table `friend_circle`
+    -- --------------------------------------------------
+    --  Table Structure for `SweetHearts/models.FriendCircle`
+    -- --------------------------------------------------
+    CREATE TABLE IF NOT EXISTS `friend_circle` (
+        `id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY,
+        `user_name` varchar(255) NOT NULL DEFAULT '' ,
+        `head_image` varchar(255) NOT NULL DEFAULT '' ,
+        `content` varchar(255) NOT NULL DEFAULT '' ,
+        `time_stamp` bigint NOT NULL DEFAULT 0 ,
+        `image_path` varchar(255) NOT NULL DEFAULT '' ,
+        `is_honey` varchar(255) NOT NULL DEFAULT ''
+    ) ENGINE=InnoDB;
+
+create table `chat_record`
+    -- --------------------------------------------------
+    --  Table Structure for `SweetHearts/models.ChatRecord`
+    -- --------------------------------------------------
+    CREATE TABLE IF NOT EXISTS `chat_record` (
+        `id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY,
+        `from` varchar(255) NOT NULL DEFAULT '' ,
+        `to` varchar(255) NOT NULL DEFAULT '' ,
+        `content` varchar(255) NOT NULL DEFAULT '' ,
+        `time_stamp` bigint NOT NULL DEFAULT 0
+    ) ENGINE=InnoDB;

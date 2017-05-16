@@ -1,0 +1,30 @@
+LoginController	/usr/local/Cellar/go/1.6.2/src/SweetHearts/controllers/login.go	/^type LoginController struct {$/;"	type	line:12
+Post	/usr/local/Cellar/go/1.6.2/src/SweetHearts/controllers/login.go	/^func (this *LoginController) Post() {$/;"	func	line:16
+logInformation	/usr/local/Cellar/go/1.6.2/src/SweetHearts/controllers/login.go	/^	var logInformation map[string]interface{}$/;"	var	line:17
+UpLoadHeadImage	/usr/local/Cellar/go/1.6.2/src/SweetHearts/up_load_head_image.go	/^type UpLoadHeadImage struct {$/;"	type	line:10
+Upload	/usr/local/Cellar/go/1.6.2/src/SweetHearts/up_load_head_image.go	/^func (this *UpLoadHeadImage) Upload() {$/;"	func	line:14
+form	/usr/local/Cellar/go/1.6.2/src/SweetHearts/test.html	/^<form id="fform" method="POST" enctype="multipart\/form-data">$/;"	function	line:1
+input	/usr/local/Cellar/go/1.6.2/src/SweetHearts/test.html	/^   <input id="myfile" name="myfile" type="file" \/>$/;"	function	line:2
+input	/usr/local/Cellar/go/1.6.2/src/SweetHearts/test.html	/^   <input type="submit" value="保存"  \/>$/;"	function	line:3
+produce	/usr/local/Cellar/go/1.6.2/src/SweetHearts/test.go	/^func produce(ch chan int) {$/;"	func	line:8
+main	/usr/local/Cellar/go/1.6.2/src/SweetHearts/test.go	/^func main() {$/;"	func	line:17
+a	/usr/local/Cellar/go/1.6.2/src/SweetHearts/test.go	/^	\/\/ var a [3]int = [3]int{1, 2, 3}$/;"	var	line:18
+a	/usr/local/Cellar/go/1.6.2/src/SweetHearts/test.go	/^	\/\/ var a [3]int = [3]int{1, 2, 3}$/;"	var	line:20
+consume	/usr/local/Cellar/go/1.6.2/src/SweetHearts/test.go	/^func consume(ch chan int) {$/;"	func	line:51
+UpLoadHeadImage	/usr/local/Cellar/go/1.6.2/src/SweetHearts/controllers/up_load_head_image.go	/^type UpLoadHeadImage struct {$/;"	type	line:12
+Post	/usr/local/Cellar/go/1.6.2/src/SweetHearts/controllers/up_load_head_image.go	/^func (this *UpLoadHeadImage) Post() {$/;"	func	line:16
+ErrorInformation	/usr/local/Cellar/go/1.6.2/src/SweetHearts/models/models.go	/^type ErrorInformation struct {$/;"	type	line:5
+User	/usr/local/Cellar/go/1.6.2/src/SweetHearts/models/models.go	/^type User struct {$/;"	type	line:10
+Profile	/usr/local/Cellar/go/1.6.2/src/SweetHearts/models/models.go	/^type Profile struct {$/;"	type	line:18
+NewProfile	/usr/local/Cellar/go/1.6.2/src/SweetHearts/models/models.go	/^func NewProfile() *Profile {$/;"	func	line:26
+result	/usr/local/Cellar/go/1.6.2/src/SweetHearts/models/models.go	/^	var result = new(Profile)$/;"	var	line:27
+init	/usr/local/Cellar/go/1.6.2/src/SweetHearts/models/models.go	/^func init() {$/;"	func	line:39
+init	/usr/local/Cellar/go/1.6.2/src/SweetHearts/main.go	/^func init() {$/;"	func	line:12
+main	/usr/local/Cellar/go/1.6.2/src/SweetHearts/main.go	/^func main() {$/;"	func	line:18
+UpdatePosController	/usr/local/Cellar/go/1.6.2/src/SweetHearts/controllers/update_pos.go	/^type UpdatePosController struct {$/;"	type	line:10
+Get	/usr/local/Cellar/go/1.6.2/src/SweetHearts/controllers/update_pos.go	/^func (this *UpdatePosController) Get() {$/;"	func	line:14
+result	/usr/local/Cellar/go/1.6.2/src/SweetHearts/controllers/update_pos.go	/^	var result []string$/;"	var	line:19
+init	/usr/local/Cellar/go/1.6.2/src/SweetHearts/routers/router.go	/^func init() {$/;"	func	line:9
+GetPosController	/usr/local/Cellar/go/1.6.2/src/SweetHearts/controllers/get_pos.go	/^type GetPosController struct {$/;"	type	line:9
+Get	/usr/local/Cellar/go/1.6.2/src/SweetHearts/controllers/get_pos.go	/^func (this *GetPosController) Get() {$/;"	func	line:13
+result	/usr/local/Cellar/go/1.6.2/src/SweetHearts/controllers/get_pos.go	/^	var result []string$/;"	var	line:15
