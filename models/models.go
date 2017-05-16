@@ -77,7 +77,7 @@ const FRIEND_CIRCLE_IP string = "http://118.89.200.173/image/friend_circle_pictu
 
 const GET_HEAD_IMAGE string = "http://118.89.200.173/image/head_image/"
 
-const PROJECT_PATH string = "/usr/local/Cellar/go/1.6.2/src/SweetHearts"
+const PROJECT_PATH string = "/root/Graution/src/SweetHearts"
 
 const UPLOAD_PATH string = PROJECT_PATH + "/image/head_image"
 
