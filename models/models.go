@@ -82,6 +82,7 @@ const PROJECT_PATH string = "/root/Graution/src/SweetHearts"
 const UPLOAD_PATH string = PROJECT_PATH + "/image/head_image"
 
 const STATIC_PATH string = PROJECT_PATH + "/static"
+const CHAT_STATIC_PATH string = PROJECT_PATH + "/chat_front"
 
 const FRIEND_CIRCLE_PICTURE string = PROJECT_PATH + "/image/friend_circle_picture"
 

@@ -35,6 +35,7 @@ func init() {
 	models.RedisClient, _ = cache.NewCache("memory", `{"key":"collectionName","conn":":6379","dbNum":"0"`)
 	beego.SetStaticPath("/image", models.IMAGE_PATH)
 	beego.SetStaticPath("/static", models.STATIC_PATH)
+	beego.SetStaticPath("/chat_front", models.CHAT_STATIC_PATH)
 	orm.RegisterDriver("mysql", orm.DRMySQL)
 	orm.RegisterDataBase("default", "mysql", "root:@/SweetHearts?charset=utf8")
 	dirname, _ := ioutil.ReadDir(models.ONE_NOTE_PATH)
