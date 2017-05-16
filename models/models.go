@@ -73,9 +73,9 @@ const GET_FRIEND_CIRCLE_PAGE = 10
 
 const ORIGIN_HEAD_IMAGE string = UPLOAD_PATH + "/origin.jpg"
 
-const FRIEND_CIRCLE_IP string = "http://172.18.76.42:8080/image/friend_circle_picture/"
+const FRIEND_CIRCLE_IP string = "http://118.89.200.173/image/friend_circle_picture/"
 
-const GET_HEAD_IMAGE string = "http://172.18.76.42:8080/image/head_image/"
+const GET_HEAD_IMAGE string = "http://118.89.200.173/image/head_image/"
 
 const PROJECT_PATH string = "/usr/local/Cellar/go/1.6.2/src/SweetHearts"
 
