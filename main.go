@@ -49,5 +49,5 @@ func main() {
 	o := orm.NewOrm()
 	o.Using("default")
 	orm.RunSyncdb("default", false, true)
-	beego.Run("127.0.0.1:80")
+	beego.Run("118.89.200.173:80")
 }
