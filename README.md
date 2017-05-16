@@ -38,7 +38,7 @@ url = http://118.89.200.173/circle/get_friend_circle
 url = http://118.89.200.173/image/head_image/jiba.jpg
 
 #获取聊天记录
-url = http://192.168.253.18:8080/chat/get_chat_record?username=admin&friendname=adminfriend&timestamp=123123123
+url = http://118.89.200.173/chat/get_chat_record?username=admin&friendname=adminfriend&timestamp=123123123
 @method :Get
 @return :
 [
