@@ -16,9 +16,9 @@ echo "mv $Graution $Graution_old"
 cp -r Graution $Graution
 echo "cp -r Graution $Graution"
 
-run="$cc/$Graution/run.sh"
+run="$cc/$Graution/src/SweetHearts/run.sh"
 sed -i "s/SweetHearts/$Graution/g" $run
 
-main="$cc/$Graution/main.go"
+main="$cc/$Graution/src/SweetHearts/main.go"
 sed -i "s/beego.BConfig.Listen.AdminPort = 8088/beego.BConfig.Listen.AdminPort = $3/g" $main
 sed -i "s/beego.Run()/beego.Run($2)/g" $main
