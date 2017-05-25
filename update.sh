@@ -23,6 +23,6 @@ sed -i "s/SweetHearts/$Graution/g" $run
 
 main="$cc/$Graution/src/SweetHearts/main.go"
 sed -i "s/beego.BConfig.Listen.AdminPort = 8088/beego.BConfig.Listen.AdminPort = $AdminBeeGo/g" $main
-sed -i "s/beego.Run()/beego.Run($BeeGo)/g" $main
+sed -i "s/beego.Run()/beego.Run("$BeeGo")/g" $main
 
 killall $Graution
