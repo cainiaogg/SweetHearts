@@ -50,5 +50,6 @@ func main() {
 	o := orm.NewOrm()
 	o.Using("default")
 	orm.RunSyncdb("default", false, true)
+	beego.BConfig.Listen.AdminPort = 8088
 	beego.Run()
 }
