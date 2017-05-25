@@ -3,6 +3,8 @@ cc=`pwd`
 # echo $0 $cc $1
 
 Graution=$1
+BeeGo=$2
+AdminBeeGo=$3
 echo start update $Graution
 
 Graution_old=""$Graution".old"
@@ -20,5 +22,7 @@ run="$cc/$Graution/src/SweetHearts/run.sh"
 sed -i "s/SweetHearts/$Graution/g" $run
 
 main="$cc/$Graution/src/SweetHearts/main.go"
-sed -i "s/beego.BConfig.Listen.AdminPort = 8088/beego.BConfig.Listen.AdminPort = $3/g" $main
-sed -i "s/beego.Run()/beego.Run($2)/g" $main
+sed -i "s/beego.BConfig.Listen.AdminPort = 8088/beego.BConfig.Listen.AdminPort = $AdminBeeGo/g" $main
+sed -i "s/beego.Run()/beego.Run($BeeGo)/g" $main
+
+killall $Graution
