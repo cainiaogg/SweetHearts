@@ -50,5 +50,5 @@ func main() {
 	o := orm.NewOrm()
 	o.Using("default")
 	orm.RunSyncdb("default", false, true)
-	beego.Run("0.0.0.0:80")
+	beego.Run()
 }
