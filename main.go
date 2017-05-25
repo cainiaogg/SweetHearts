@@ -17,7 +17,7 @@ func addOneNoteIndex() {
 	for true {
 		time.Sleep(time.Minute * 5)
 		models.NowOneNoteTime = time.Now()
-		if models.NowOneNoteTime.Sub(models.LastOneNoteTime) > time.Hour*24 {
+		if models.NowOneNoteTime.Sub(models.LastOneNoteTime) > time.Hour*12 {
 			models.LastOneNoteTime = models.NowOneNoteTime
 			models.OneNoteIndex += 20
 			if models.OneNoteIndex > len(models.OneNoteResult) {
