@@ -1,2 +1,3 @@
-go build main.go
-./main
+name=SweetHearts
+go build -o $name main.go
+./$name
