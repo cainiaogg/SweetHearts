@@ -45,6 +45,7 @@ func (this *GetOneNote) Get() {
 	}
 	fmt.Println(hashString)
 	oneNoteSuffix := GetHash(hashString)
+	oneNoteSuffix = models.OneNoteIndex - oneNoteSuffix
 	fmt.Println(hashString)
 	fmt.Println(oneNoteSuffix)
 
