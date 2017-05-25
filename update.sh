@@ -2,23 +2,23 @@
 cc=`pwd`
 # echo $0 $cc $1
 
-Gruation=$1
-echo start update $Gruation
+Graution=$1
+echo start update $Graution
 
-Gruation_old=""$Gruation".old"
+Graution_old=""$Graution".old"
 
-rm -rf $Gruation_old
-echo "rm -rf $Gruation_old"
+rm -rf $Graution_old
+echo "rm -rf $Graution_old"
 
-mv $Gruation $Gruation_old
-echo "mv $Gruation $Gruation_old"
+mv $Graution $Graution_old
+echo "mv $Graution $Graution_old"
 
-cp -r Gruation $Gruation
-echo "cp -r Gruation $Gruation"
+cp -r Graution $Graution
+echo "cp -r Graution $Graution"
 
-run="$cc/$Gruation/run.sh"
-sed -i "s/SweetHearts/$Gruation/g" $run
+run="$cc/$Graution/run.sh"
+sed -i "s/SweetHearts/$Graution/g" $run
 
-main="$cc/$Gruation/main.go"
+main="$cc/$Graution/main.go"
 sed -i "s/beego.BConfig.Listen.AdminPort = 8088/beego.BConfig.Listen.AdminPort = $3/g" $main
 sed -i "s/beego.Run()/beego.Run($2)/g" $main
