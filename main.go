@@ -9,6 +9,7 @@ import (
 	"time"
 
 	"github.com/astaxie/beego"
+	_ "github.com/astaxie/beego/cache/redis"
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql"
 )
