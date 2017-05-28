@@ -5,10 +5,10 @@ import (
 	_ "SweetHearts/routers"
 	"fmt"
 	"io/ioutil"
+	"sync"
 	"time"
 
 	"github.com/astaxie/beego"
-	"github.com/astaxie/beego/cache"
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql"
 )
@@ -29,10 +29,12 @@ func addOneNoteIndex() {
 }
 
 func init() {
+	models.M_REDIS = new(sync.Mutex)
+	models.RedisClient = models.NewMyRedisClient()
 	models.OneNoteIndex = 20
 	models.NowOneNoteTime = time.Now()
 	models.LastOneNoteTime = time.Now()
-	models.RedisClient, _ = cache.NewCache("memory", `{"key":"collectionName","conn":":6379","dbNum":"0"`)
+	// models.RedisClient, _ = cache.NewCache("memory", `{"key":"collectionName","conn":":6379","dbNum":"0"`)
 	beego.SetStaticPath("/image", models.IMAGE_PATH)
 	beego.SetStaticPath("/static", models.STATIC_PATH)
 	beego.SetStaticPath("/chat_front", models.CHAT_STATIC_PATH)

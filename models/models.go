@@ -1,9 +1,9 @@
 package models
 
 import (
+	"sync"
 	"time"
 
-	"github.com/astaxie/beego/cache"
 	"github.com/astaxie/beego/orm"
 )
 
@@ -65,7 +65,7 @@ var LastOneNoteTime time.Time
 var NowOneNoteTime time.Time
 var ChatRoomMap map[string]*ChatRoom
 
-var RedisClient cache.Cache
+var RedisClient *MyRedisClient
 
 const REDIS_ADDFRIEND_TIME_OUT time.Duration = time.Second * 1000000000
 
@@ -91,6 +91,10 @@ const IMAGE_PATH string = PROJECT_PATH + "/image"
 const ONE_NOTE_PATH string = PROJECT_PATH + "/views"
 
 const ONE_NOTE_INDEX int = 20
+
+var REDIS_LIST = [3]string{"0.0.0.0:6379", "0.0.0.0:6380", "0.0.0.0:6381"}
+
+var M_REDIS *sync.Mutex
 
 func init() {
 	ChatRoomMap = make(map[string]*ChatRoom)
