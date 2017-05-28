@@ -24,9 +24,9 @@ func S2B(s *string) []byte {
 
 func addOneNoteIndex() {
 	for true {
-		time.Sleep(time.Minute * 2)
+		time.Sleep(time.Minute * 5)
 		models.NowOneNoteTime = time.Now()
-		if models.NowOneNoteTime.Sub(models.LastOneNoteTime) > time.Minute*1 {
+		if models.NowOneNoteTime.Sub(models.LastOneNoteTime) > time.Hour*12 {
 			models.LastOneNoteTime = models.NowOneNoteTime
 			models.OneNoteIndex += 20
 			err := models.RedisClient.Put("LastOneNoteTime", models.LastOneNoteTime, models.REDIS_ADDFRIEND_TIME_OUT)
