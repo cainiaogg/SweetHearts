@@ -19,6 +19,7 @@ func NewMyRedisClient() *MyRedisClient {
 		redisClient, err := cache.NewCache("redis", fmt.Sprintf(`{"conn":"%s", "key":"beecacheRedis"}`, addr))
 		if err != nil {
 			fmt.Println("Error ", err)
+			continue
 		}
 		myRedisClient.RedisClientList = append(myRedisClient.RedisClientList, redisClient)
 	}
