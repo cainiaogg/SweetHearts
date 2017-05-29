@@ -46,6 +46,7 @@ func (this *ChatController) Get() {
 	models.ChatRoomMap[RoomName].Join(UserName, ws)
 	for {
 		_, p, err := ws.ReadMessage()
+		fmt.Println("ws error:", err)
 		if len(string(p)) == 0 {
 			continue
 		}

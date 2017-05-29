@@ -88,6 +88,8 @@ func (this *ChatRoom) chatRoom() {
 		case joiner := <-this.Joiner:
 			this.ChatUserMap[joiner.UserName] = *joiner
 		case leaver := <-this.Leaver:
+			this.ChatUserMap[leaver].Conn.Close()
+			fmt.Println(leaver, "connect close")
 			delete(this.ChatUserMap, leaver)
 			if len(this.ChatUserMap) == 0 {
 				fmt.Println("chatroom close")
