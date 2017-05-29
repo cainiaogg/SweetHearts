@@ -47,6 +47,9 @@ func (this *ChatController) Get() {
 	for {
 		_, p, err := ws.ReadMessage()
 		fmt.Println("ws error:", err)
+		if err != nil {
+			return
+		}
 		if len(string(p)) == 0 {
 			continue
 		}
